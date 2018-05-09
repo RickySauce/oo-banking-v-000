@@ -14,11 +14,7 @@ attr_reader :name
 
   def withdraw(amount)
     @balance -= amount
-    if valid?
-      true
-    else
-      @balance += amount && false
-    end
+    @balance += amount if !valid?
   end
 
   def display_balance
