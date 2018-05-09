@@ -14,7 +14,8 @@ class Transfer
   end
 
  def execute_transaction
-   @sender.withdraw(amount) ? @sender.withdraw(amount) && @receiver.deposit(amount) : "Transaction rejected. Please check your account balance."
+  @sender.withdraw(amount) && @reciever.depost(amount)
+  valid? ? :
  end
 
 end
