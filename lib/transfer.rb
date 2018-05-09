@@ -15,7 +15,7 @@ class Transfer
 
  def execute_transaction
   @sender.withdraw(@amount) && @receiver.deposit(@amount)
-  valid? ? puts "complete" : puts "Transaction rejected. Please check your account balance."
+  self.valid? ? puts "complete" : puts "Transaction rejected. Please check your account balance."
 end
  end
 
