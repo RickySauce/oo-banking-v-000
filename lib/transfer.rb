@@ -15,7 +15,6 @@ class Transfer
 
  def execute_transaction
   @sender.withdraw(amount) && @reciever.depost(amount)
-  valid? ? :
  end
 
 end
