@@ -14,7 +14,7 @@ class Transfer
   end
 
  def execute_transaction
-  @sender.withdraw(amount) && @reciever.deposit(amount)
+  @sender.withdraw(@amount) && @reciever.deposit(@amount)
  end
 
 end
